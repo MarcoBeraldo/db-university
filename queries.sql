@@ -25,7 +25,7 @@ AND `year` = 1;
 SELECT * 
 FROM `exams`
 WHERE `date` = "2020-06-20"
-AND `hour` BETWEEN "14:00:01" AND "23:59:59";
+AND HOUR(`hour`) >= 14;
 
 -- 6. Selezionare tutti i corsi di laurea magistrale (38)
 SELECT * 
